@@ -1,0 +1,65 @@
+body{
+    /* background-color: #3e3e3e; */
+    /* background-image: linear-gradient(to right, #6a2c44, #419191); */
+    background-image: url("../img/3.jfif");
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#tablecontent {
+    zoom: 80%;
+  }
+
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      background-color: rgba(255, 255, 255, 0.1);
+      /* box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1); */
+      /* box-shadow: rgb(77 255 206) 0px 25px 90px; */
+      box-shadow: rgb(154 255 227) 0px 25px 90px;
+      backdrop-filter: blur(25px);
+  }
+
+  .dataTables_length{
+      margin-left: 55px;
+  }
+
+  th{
+      color: #be396c;
+  }
+  td{
+      color: rgb(219 219 219);
+  }
+
+  tbody tr td img{
+      width: 100px;
+  }
+
+  tbody tr:hover{
+    backdrop-filter: blur(60px);
+  }
+
+  .page-link{
+      color: #be396c;
+  }
+
+  .page-link:hover{
+      color: #be396c;
+  }
+
+  .page-item.disabled .page-link{
+      background-color: #be396c;
+      border-color: #5e5e5e;
+      color: white;
+  }
+
+  .page-item.active .page-link{
+      background-color: #be396c;
+      border-color: #5e5e5e;
+      color: white;
+  }
+
+  .form-control{
+    color: white;
+    /* background-color: #3e3e3e; */
+  }

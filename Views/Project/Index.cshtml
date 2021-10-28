@@ -1,0 +1,331 @@
+﻿@model List<Project5.Models.Personal_Information>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    
+    <link href="~/Content/css/data.css" rel="stylesheet" />
+
+    <title>Personal information</title>
+</head>
+<body>
+    <div class="container">
+        <a href="Project/Adddata"><img src="~/Content/img/4.png" style="width: 38px;height: 32px;border: 1px solid #be396c;padding: 2px;box-shadow: #be396c 2px 2px 10px 1px;position: absolute;border-radius: 4px;"></a>
+        <div id="example_wrapper" class="dataTables_Wrapper dt-bootstrap5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>National ID</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>National ID image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.First_Name</td>
+                                    <td>@item.Last_Name_</td>
+                                    <td>@item.National_Id_</td>
+                                    <td>@item.Phone_Number_</td>
+                                    <td>@item.Email</td>
+                                    <td>
+                                        <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                    </td>
+                                    
+                                </tr>
+                            }
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>123456789987</td>
+                                <td>01019143124</td>
+                                <td>Tiger@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Garrett</td>
+                                <td>Winters</td>
+                                <td>234598764252</td>
+                                <td>01019143124</td>
+                                <td>Garrett@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ashton</td>
+                                <td>Cox</td>
+                                <td>124236458655</td>
+                                <td>01019143124</td>
+                                <td>Ashton@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cedric</td>
+                                <td>Kelly</td>
+                                <td>234567876525</td>
+                                <td>01019143124</td>
+                                <td>Cedric@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Airi</td>
+                                <td>Satou</td>
+                                <td>123456789965</td>
+                                <td>01019143124</td>
+                                <td>Airi1234@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Brielle</td>
+                                <td>Williamson</td>
+                                <td>142364346324</td>
+                                <td>01019143124</td>
+                                <td>Brielle@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Herrod</td>
+                                <td>Chandler</td>
+                                <td>215236456734</td>
+                                <td>01019143124</td>
+                                <td>Herrod@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Rhona</td>
+                                <td>Davidson</td>
+                                <td>325345867645</td>
+                                <td>01019143124</td>
+                                <td>Rhona@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Colleen</td>
+                                <td>Hurst</td>
+                                <td>253656965523</td>
+                                <td>01019143124</td>
+                                <td>Colleen@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sonya</td>
+                                <td>Frost</td>
+                                <td>214364586643</td>
+                                <td>01019143124</td>
+                                <td>Sonya@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jena</td>
+                                <td>Gaines</td>
+                                <td>243122676324</td>
+                                <td>01019143124</td>
+                                <td>Jena@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Quinn</td>
+                                <td>Flynn</td>
+                                <td>135346458654</td>
+                                <td>01019143124</td>
+                                <td>Quinn@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Charde</td>
+                                <td>Marshall</td>
+                                <td>123456789654</td>
+                                <td>01019143124</td>
+                                <td>Charde@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Haley</td>
+                                <td>Kennedy</td>
+                                <td>123456789997</td>
+                                <td>01019143124</td>
+                                <td>Haley@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tatyana</td>
+                                <td>Fitzpatrick</td>
+                                <td>975645345233</td>
+                                <td>01019143124</td>
+                                <td>Tatyana@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Michael</td>
+                                <td>Silva</td>
+                                <td>214243254796</td>
+                                <td>01019143124</td>
+                                <td>Michael@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Paul</td>
+                                <td>Byrd</td>
+                                <td>124448787901</td>
+                                <td>01019143124</td>
+                                <td>Paul@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Little</td>
+                                <td>134568097645</td>
+                                <td>01019143124</td>
+                                <td>Gloria@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bradley</td>
+                                <td>Greer</td>
+                                <td>364585695642</td>
+                                <td>01019143124</td>
+                                <td>Bradley@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dai</td>
+                                <td>Rios</td>
+                                <td>125365965345</td>
+                                <td>01019143124</td>
+                                <td>Dai@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenette</td>
+                                <td>Caldwell</td>
+                                <td>242353476962</td>
+                                <td>01019143124</td>
+                                <td>Jenette@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Yuri</td>
+                                <td>Berry</td>
+                                <td>325364769528</td>
+                                <td>01019143124</td>
+                                <td>Yuri@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Caesar</td>
+                                <td>Vance</td>
+                                <td>245467086253</td>
+                                <td>01019143124</td>
+                                <td>Caesar@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Doris</td>
+                                <td>Wilder</td>
+                                <td>123634765486</td>
+                                <td>01019143124</td>
+                                <td>Doris@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Angelica</td>
+                                <td>Ramos</td>
+                                <td>346459636267</td>
+                                <td>01019143124</td>
+                                <td>Angelica@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gavin</td>
+                                <td>Joyce</td>
+                                <td>243658946267</td>
+                                <td>01019143124</td>
+                                <td>Gavin@gmail.com</td>
+                                <td>
+                                    <a href="~/Content/img/1.jfif"><img src="~/Content/img/1.jfif"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>National ID</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>National ID image</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/Scripts/js/data.js"></script>
+</body>
+</html>
+
